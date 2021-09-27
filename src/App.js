@@ -44,7 +44,7 @@ const App = () => {
     
 	//loading的时候显示等待图案，并旋转
 	return <>
-	<div id="title" style={{top:0,left: 760,position:"fixed","z-index":9999}}>
+	<div id="title" style={{top:0,left: 805,position:"fixed","z-index":9999}}>
 	<h1>Near🔮</h1>
 	<h1> Dungeon⚔️</h1>
 	<h1>Hack⚡</h1>
@@ -86,7 +86,8 @@ const App = () => {
 		{ !signedIn &&
             <div id="guest">
             	<>
-            		<Keys {...{ near, update, localKeys }} />
+            		{/*<Keys {...{ near, update, localKeys }} />*/}
+					<p>Please connect your NEAR wallet !</p>
             	</>
             </div>
 		}
